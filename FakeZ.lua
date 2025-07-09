@@ -22,7 +22,7 @@ function UILibrary:CreateUI()
     corner.CornerRadius = UDim.new(0, 16)
     corner.Parent = FrameScreen
 
-    -- Paso 2: Botón de mostrar/ocultar
+    -- Hide/Show Button
     local ToggleBtn = Instance.new("TextButton")
     ToggleBtn.Size = UDim2.new(0, 32, 0, 32)
     ToggleBtn.Position = UDim2.new(1, -40, 0, 8)
@@ -53,7 +53,7 @@ function UILibrary:CreateUI()
         tween:Play()
     end)
 
-    -- Paso 3: Botón redondo de Drag
+    -- Drag Button
     local DragBtn = Instance.new("TextButton")
     DragBtn.Size = UDim2.new(0, 32, 0, 32)
     DragBtn.Position = UDim2.new(0, 8, 0, 8)
@@ -65,7 +65,7 @@ function UILibrary:CreateUI()
     dragCorner.CornerRadius = UDim.new(1, 0)
     dragCorner.Parent = DragBtn
 
-    -- Drag solo desde el botón
+    -- Only Drag By Button
     local UIS = game:GetService("UserInputService")
     local dragging = false
     local dragInput, dragStart, startPos
@@ -99,7 +99,7 @@ function UILibrary:CreateUI()
         end
     end)
 
-    -- Paso 4: Funciones Auxiliares
+    -- Some Functions
     local UI = {}
 
     function UI:AddLabel(text)
