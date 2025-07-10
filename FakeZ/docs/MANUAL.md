@@ -21,7 +21,7 @@ UI:AddLabel(text)
 ```
 
 Do You Want Get The Frame Or ScreenUI?, Use:
-```
+```lua
 UI:GetMainFrame()
 -- Or
 UI:GetScreen()
