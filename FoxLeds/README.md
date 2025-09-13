@@ -1,5 +1,5 @@
 # Uses
-## Title
+## UI
 You Can Use
 ```lua
 Title.Text = "MyUINameTitleLol"
