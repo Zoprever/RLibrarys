@@ -5,7 +5,7 @@ Title Editting
 Title.Text = "MyUINameTitleLol"
 ```
 ## Importants
-If Theres Exists A Slider Please Add As Parent MySlider.Frame Only In Buttons, If Not Add MainFrame.
+If Theres Exists A Slider Please Add As Parent MySlider.Frame Only In Buttons, If Not Add MainFrame And Mostly In Slider.
 ## Functionalitys
 Button:
 ```lua
