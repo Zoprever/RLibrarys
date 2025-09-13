@@ -1,6 +1,6 @@
 # Uses
 ## UI
-You Can Use
+Title Editting
 ```lua
 Title.Text = "MyUINameTitleLol"
 ```
