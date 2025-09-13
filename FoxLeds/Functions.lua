@@ -1,7 +1,3 @@
--- Functions.lua - Componentes de FoxLeds UI Library
-
-local Functions = {}
-
 -- Servicios
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -15,7 +11,7 @@ local COLORS = {
 }
 
 -- Función para crear botones
-function Functions.CreateButton(parent, text, callback)
+function CreateButton(parent, text, callback)
     local btn = Instance.new("TextButton")
     btn.Size = UDim2.new(0, 200, 0, 40)
     btn.BackgroundColor3 = COLORS.ButtonDefault
@@ -45,7 +41,7 @@ function Functions.CreateButton(parent, text, callback)
 end
 
 -- Función para crear toggles
-function Functions.CreateToggle(parent, text, callback)
+function CreateToggle(parent, text, callback)
     local toggle = Instance.new("TextButton")
     toggle.Size = UDim2.new(0, 200, 0, 40)
     toggle.BackgroundColor3 = COLORS.ToggleOff
@@ -71,7 +67,7 @@ function Functions.CreateToggle(parent, text, callback)
 end
 
 -- Función para crear un slider vertical
-function Functions.CreateSlider(parent)
+function CreateSlider(parent)
     local sliderFrame = Instance.new("Frame")
     sliderFrame.Size = UDim2.new(0, 220, 0, 200)
     sliderFrame.BackgroundTransparency = 0
