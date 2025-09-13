@@ -22,3 +22,5 @@ local MySlider = Functions.CreateSlider(parent)
 ```
 ## Usage
 Just Add The Loadstring of The Raws From The Files And Start Testing
+## Note
+It Doesnt Need To Add The Windows It adds itself
