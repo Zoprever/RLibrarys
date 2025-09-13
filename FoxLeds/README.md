@@ -6,6 +6,7 @@ Title.Text = "MyUINameTitleLol"
 ```
 ## Importants
 If Theres Exists A Slider Please Add As Parent MySlider.Frame Only In Buttons, If Not Add MainFrame And Mostly In Slider.
+Open Source..
 ## Functionalitys
 Button:
 ```lua
@@ -19,4 +20,5 @@ Slider(If Theres So Many Buttons):
 ```lua
 local MySlider = Functions.CreateSlider(parent)
 ```
-## Thats All For Now
+## Usage
+Just Add The Loadstring of The Raws From The Files And Start Testing
