@@ -17,6 +17,6 @@ local MyToggle = Functions.CreateToggle(parent, text, callback)
 ```
 Slider(If Theres So Many Buttons):
 ```lua
-Local MySlider = Functions.CreateSlider(parent)
+local MySlider = Functions.CreateSlider(parent)
 ```
 ## Thats All For Now
