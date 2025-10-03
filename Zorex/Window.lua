@@ -1,5 +1,5 @@
 -- Loadstrings --
-loadstring(game:HttGet(https://raw.githubusercontent.com/Zoprever/RLibrarys/refs/heads/main/Drag.lua))
+loadstring(game:HttGet("https://raw.githubusercontent.com/Zoprever/RLibrarys/refs/heads/main/Drag.lua"))
 -- Window --
 local UI_SIZE = UDim2.new(0, 420, 0, 260)
 local UI_POSITION = UDim2.new(0.5, -210, 0.5, -130)
