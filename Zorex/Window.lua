@@ -1,5 +1,4 @@
 -- Window --
-local BACKGROUND_IMAGE = "rbxassetid://121733512083018"
 local UI_SIZE = UDim2.new(0, 420, 0, 260)
 local UI_POSITION = UDim2.new(0.5, -210, 0.5, -130)
 local UI_TRANSPARENCY = 0.4
