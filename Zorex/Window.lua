@@ -12,21 +12,21 @@ end
 
 -- ScreenGui
 local ZorexUI = Instance.new("ScreenGui")
-screenGui.Name = "ZorexUI"
-screenGui.ResetOnSpawn = false
-screenGui.Parent = parentGui
+ZorexUI.Name = "ZorexUI"
+ZorexUI.ResetOnSpawn = false
+ZorexUI.Parent = parentGui
 
 -- Main Window
 local Main = Instance.new("Frame")
-main.Name = "Window"
-main.Size = UI_SIZE
-main.Position = UI_POSITION
-main.BackgroundColor3 = Color3.fromRGB(0,0,0)
-main.BackgroundTransparency = UI_TRANSPARENCY
-main.BorderSizePixel = 0
-main.Parent = screenGui
+Main.Name = "Window"
+Main.Size = UI_SIZE
+Main.Position = UI_POSITION
+Main.BackgroundColor3 = Color3.fromRGB(0,0,0)
+Main.BackgroundTransparency = UI_TRANSPARENCY
+Main.BorderSizePixel = 0
+Main.Parent = ZorexUI
 
 -- UICorner
-local uicorner = Instance.new("UICorner")
-uicorner.CornerRadius = UDim.new(0, 12)
-uicorner.Parent = main
+local UIC = Instance.new("UICorner")
+UIC.CornerRadius = UDim.new(0, 12)
+UIC.Parent = Main
