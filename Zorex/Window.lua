@@ -1,3 +1,5 @@
+-- Universal Drag
+
 -- Window --
 local UI_SIZE = UDim2.new(0, 420, 0, 260)
 local UI_POSITION = UDim2.new(0.5, -210, 0.5, -130)
