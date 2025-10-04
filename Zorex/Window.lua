@@ -25,7 +25,6 @@ Main.BackgroundTransparency = UI_TRANSPARENCY
 Main.BorderSizePixel = 0
 Main.Parent = ZorexUI
 
--- UICorner
 local UIC = Instance.new("UICorner")
 UIC.CornerRadius = UDim.new(0, 12)
 UIC.Parent = Main
