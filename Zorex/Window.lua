@@ -11,13 +11,11 @@ else
     parentGui = game:GetService("CoreGui")
 end
 
--- ScreenGui
 local ZorexUI = Instance.new("ScreenGui")
 ZorexUI.Name = "ZorexUI"
 ZorexUI.ResetOnSpawn = false
 ZorexUI.Parent = parentGui
 
--- Main Window
 local Main = Instance.new("Frame")
 Main.Name = "Window"
 Main.Size = UI_SIZE
