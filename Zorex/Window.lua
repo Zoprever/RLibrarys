@@ -1,5 +1,5 @@
 -- Loadstrings --
-local Dragify = loadstring(game:HttpGet("https://raw.githubusercontent.com/Zoprever/RLibrarys/refs/heads/main/Drag.lua"))()
+loadstring(game:HttpGet(""))()
 -- Window --
 local UI_SIZE = UDim2.new(0, 420, 0, 260)
 local UI_POSITION = UDim2.new(0.5, -210, 0.5, -130)
