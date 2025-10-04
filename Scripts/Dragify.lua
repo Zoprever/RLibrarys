@@ -1,6 +1,5 @@
 local UserInputService = game:GetService("UserInputService")
-
-local function Dragify(Frame)
+function Dragify(Frame)
     local dragging
     local dragInput, dragStart, startPos
 
@@ -42,5 +41,3 @@ local function Dragify(Frame)
         end
     end)
 end
-
-return Dragify
