@@ -1,5 +1,6 @@
 -- Loadstrings --
-loadstring(game:HttpGet(""))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Zoprever/RLibrarys/refs/heads/main/Scripts/Scripts.lua"))()
+Notify("Made by Zoprever", "Join to Our Discord!", nil, 5)
 -- Window --
 local UI_SIZE = UDim2.new(0, 420, 0, 260)
 local UI_POSITION = UDim2.new(0.5, -210, 0.5, -130)
