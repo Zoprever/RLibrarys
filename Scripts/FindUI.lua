@@ -1,6 +1,6 @@
 function SearchForUI(NameUI)
--- GetParent --
-local parentGui
+    -- GetParent --
+    local parentGui
     if typeof(gethui) == "function" then
         parentGui = gethui()
     else
