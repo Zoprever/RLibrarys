@@ -35,7 +35,8 @@ local Use = true
 
 -- Delete Everything
 local function Opt1()
-  AB.Parent:Destroy()
+	AB.Parent:Destroy()
+	warn("Cannot Destroy")
 end
 
 -- Hide/Show Window
@@ -43,9 +44,11 @@ local function Opt2()
 	if Use == true then
 		AB.Parent.Window:Destroy()
 		Use = false
+		warn("Cannot Destroy Window")
 	elseif Use == false then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Zoprever/RLibrarys/refs/heads/main/Zorex/Window.lua"))()
 		Use = true
+		warn("Cannot Execute")
 	end
 end
 
