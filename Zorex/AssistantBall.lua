@@ -1,6 +1,7 @@
 -- Find a ScreenGUI to Connect --
 loadstring(game:HttpGet("https://github.com/Zoprever/RLibrarys/blob/main/Scripts/FindUI.lua"))()
 
+local ScreenGui = SearchForUI("ZorexUI")
 -- ✅ Ahora puedes crear tus elementos dentro del ScreenGui
 local AB = Instance.new("Frame")
 AB.Name = "AssistiveBall"
