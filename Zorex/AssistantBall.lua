@@ -33,22 +33,23 @@ icon.ZIndex = 51
 
 local Use = true
 
+-- Delete Everything
 local function Opt1()
   AB.Parent:Destroy()
 end
 
--- Función 2: Ocultar / Mostrar la ventana
+-- Hide/Show Window
 local function Opt2()
-  if Use == true then
-    AB.Parent.Window:Destroy()
+	if Use == true then
+		AB.Parent.Window:Destroy()
 		Use = false
-  elseif Use == false then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Zoprever/RLibrarys/refs/heads/main/Zorex/Window.lua"))()
-    Use = true
-  end
+	elseif Use == false then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Zoprever/RLibrarys/refs/heads/main/Zorex/Window.lua"))()
+		Use = true
+	end
 end
 
--- Detectar clic
+-- On Tap
 AB.InputBegan:Connect(function(input)
 	if input.UserInputType == Enum.UserInputType.MouseButton1 
 	or input.UserInputType == Enum.UserInputType.Touch then
