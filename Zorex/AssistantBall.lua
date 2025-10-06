@@ -30,3 +30,28 @@ icon.TextScaled = true
 icon.Font = Enum.Font.SourceSansBold
 icon.TextColor3 = Color3.fromRGB(255, 255, 255)
 icon.ZIndex = 51
+
+local Use = true
+
+local function Opt1()
+  AB.Parent:Destroy()
+end
+
+-- Función 2: Ocultar / Mostrar la ventana
+local function Opt2()
+  if Use == true then
+    AB.Parent.Window:Destroy()
+		Use = false
+  elseif Use == false then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Zoprever/RLibrarys/refs/heads/main/Zorex/Window.lua"))()
+    Use = true
+  end
+end
+
+-- Detectar clic
+AB.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 
+	or input.UserInputType == Enum.UserInputType.Touch then
+		Request(5, "Delete", "Hide", Opt1, Opt2)
+	end
+end)
