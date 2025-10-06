@@ -6,7 +6,7 @@ function Notify(title, content, icon, seconds)
             Duration = seconds
         })
 end
-function Request(Content, Seconds, A1, A2, CB1, CB2)
+function Request(Seconds, A1, A2, CB1, CB2)
     game:GetService("StarterGui"):SetCore("SendNotification", {
             Title = "Request",
             Text = A1 .. " or " .. A2,
