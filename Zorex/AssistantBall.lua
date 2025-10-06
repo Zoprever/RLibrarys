@@ -31,16 +31,7 @@ icon.Font = Enum.Font.SourceSansBold
 icon.TextColor3 = Color3.fromRGB(255, 255, 255)
 icon.ZIndex = 51
 
-local Use = true
-
--- Delete Everything
-local function Opt1()
-	AB.Parent:Destroy()
-	warn("Cannot Destroy")
-end
-
--- Hide/Show Window
-local function Opt2()
+local function Hide()
 	if Use == true then
 		AB.Parent.Window:Destroy()
 		Use = false
@@ -56,6 +47,6 @@ end
 AB.InputBegan:Connect(function(input)
 	if input.UserInputType == Enum.UserInputType.MouseButton1 
 	or input.UserInputType == Enum.UserInputType.Touch then
-		Request(5, "Delete", "Hide", Opt1, Opt2)
+		Hide()
 	end
 end)
