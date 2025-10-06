@@ -1,5 +1,5 @@
 -- Find a ScreenGUI to Connect --
-loadstring(game:HttpGet("https://github.com/Zoprever/RLibrarys/blob/main/Scripts/Scripts.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Zoprever/RLibrarys/refs/heads/main/Scripts/Scripts.lua"))()
 
 local ScreenGui = SearchForUI("ZorexUI")
 -- Assistive Ball
