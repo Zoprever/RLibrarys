@@ -14,4 +14,5 @@ function SearchForUI(NameUI)
     if not ScreenGui then
         print("Cannot Find: " .. NameUI)
     end
+    return ScreenGui
 end
