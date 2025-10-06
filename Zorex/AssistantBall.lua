@@ -16,4 +16,4 @@ AB.Parent = ScreenGui
 local UICorner = Instance.new("UICorner")
 UICorner.CornerRadius = UDim.new(1, 0)
 UICorner.Parent = AB
-
+Dragify(AB)
