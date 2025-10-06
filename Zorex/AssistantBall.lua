@@ -20,13 +20,13 @@ UICorner.Parent = AB
 Dragify(AB)
 
 -- 🟣: Icon
-for i = 1, 3 do
-	local line = Instance.new("Frame")
-	line.Name = "Line"..i
-	line.Parent = AB
-	line.Size = UDim2.new(0.6, 0, 0.08, 0)
-	line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	line.BorderSizePixel = 0
-	line.AnchorPoint = Vector2.new(0.5, 0.5)
-	line.Position = UDim2.new(0.5, 0, (0.4 + (i-1)*0.25), 0)
-end
+local icon = Instance.new("TextLabel")
+icon.Name = "MenuIcon"
+icon.Parent = AB
+icon.Size = UDim2.new(1, 0, 1, 0)
+icon.BackgroundTransparency = 1
+icon.Text = "="
+icon.TextScaled = true
+icon.Font = Enum.Font.SourceSansBold
+icon.TextColor3 = Color3.fromRGB(255, 255, 255)
+icon.ZIndex = 51
