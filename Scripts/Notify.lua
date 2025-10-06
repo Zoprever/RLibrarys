@@ -20,5 +20,6 @@ function Request(Seconds, A1, A2, CB1, CB2)
                     CB2()
                 end
             end
+            warn("Callback doesnt exist")
       })
 end
