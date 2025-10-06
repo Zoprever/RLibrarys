@@ -56,6 +56,6 @@ end
 AB.InputBegan:Connect(function(input)
 	if input.UserInputType == Enum.UserInputType.MouseButton1 
 	or input.UserInputType == Enum.UserInputType.Touch then
-		Request(5, "Delete", "Hide", Opt1, Opt2)
+		Request(5, "Delete", "Hide", Opt1(), Opt2())
 	end
 end)
