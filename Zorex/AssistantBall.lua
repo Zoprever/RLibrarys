@@ -33,7 +33,7 @@ icon.ZIndex = 51
 
 local function Hide()
 	if Use == true then
-		AB.Parent.Window:Destroy()
+		ScreenGui.Window:Destroy()
 		Use = false
 		warn("Cannot Destroy Window")
 	elseif Use == false then
