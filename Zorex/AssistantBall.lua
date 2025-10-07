@@ -33,11 +33,13 @@ icon.ZIndex = 51
 
 local function Hide()
 	if Use == true then
-		ScreenGui.Window:Destroy()
+		ScreenGui.Window.Visible = false
+		ScreenGui.Window.Active = false
 		Use = false
 		warn("Cannot Destroy Window")
 	elseif Use == false then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Zoprever/RLibrarys/refs/heads/main/Zorex/Window.lua"))()
+		ScreenGui.Window.Visible = true
+		ScreenGui.Window.Active = true
 		Use = true
 		warn("Cannot Execute")
 	end
