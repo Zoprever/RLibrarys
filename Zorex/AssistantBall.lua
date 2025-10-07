@@ -35,19 +35,14 @@ icon.ZIndex = 51
 local Use = true
 
 -- Función para mostrar/ocultar ventana
-local function Hide()
+function Hide()
 	local window = ScreenGui:FindFirstChild("Window")
-	if not window then
-		warn("⚠️ No se encontró ningún 'Window' en el ScreenGui.")
-		return
-	end
-
-	if Use then
+	if Use == true then
 		window.Visible = false
 		window.Active = false
 		Use = false
 		warn("🟣 Window Oculta")
-	else
+	elseif Use == false then
 		window.Visible = true
 		window.Active = true
 		Use = true
