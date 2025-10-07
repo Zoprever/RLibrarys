@@ -2,13 +2,13 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Zoprever/RLibrarys/refs/heads/main/Scripts/Scripts.lua"))()
 
 local ScreenGui = SearchForUI("ZorexUI")
+
 -- Assistive Ball
 local AB = Instance.new("Frame")
 AB.Name = "AssistiveBall"
 AB.Size = UDim2.new(0, 65, 0, 65)
 AB.Position = UDim2.new(1, -100, 0.5, 0)
 AB.BackgroundColor3 = Color3.fromRGB(125,80,255)
-AB.BackgroundTransparency = 0
 AB.BorderSizePixel = 0
 AB.AnchorPoint = Vector2.new(0.5, 0.5)
 AB.ZIndex = 50
@@ -19,7 +19,7 @@ UICorner.CornerRadius = UDim.new(1, 0)
 UICorner.Parent = AB
 Dragify(AB)
 
--- 🟣: Icon
+-- 🟣 Icon
 local icon = Instance.new("TextLabel")
 icon.Name = "MenuIcon"
 icon.Parent = AB
@@ -31,21 +31,31 @@ icon.Font = Enum.Font.SourceSansBold
 icon.TextColor3 = Color3.fromRGB(255, 255, 255)
 icon.ZIndex = 51
 
+-- Estado global
+local Use = true
+
+-- Función para mostrar/ocultar ventana
 local function Hide()
-	if Use == true then
-		ScreenGui.Window.Visible = false
-		ScreenGui.Window.Active = false
+	local window = ScreenGui:FindFirstChild("Window")
+	if not window then
+		warn("⚠️ No se encontró ningún 'Window' en el ScreenGui.")
+		return
+	end
+
+	if Use then
+		window.Visible = false
+		window.Active = false
 		Use = false
-		warn("Cannot Destroy Window")
-	elseif Use == false then
-		ScreenGui.Window.Visible = true
-		ScreenGui.Window.Active = true
+		warn("🟣 Window Oculta")
+	else
+		window.Visible = true
+		window.Active = true
 		Use = true
-		warn("Cannot Execute")
+		warn("🟢 Window Mostrada")
 	end
 end
 
--- On Tap
+-- Evento de toque/clic
 AB.InputBegan:Connect(function(input)
 	if input.UserInputType == Enum.UserInputType.MouseButton1 
 	or input.UserInputType == Enum.UserInputType.Touch then
